@@ -97,9 +97,34 @@
                     <view key="view" contentMode="scaleToFill" id="NXi-MO-1rH">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n3B-dP-xbj">
+                                <rect key="frame" x="140" y="20" width="320" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="vch-4U-gYB" id="Frh-a9-YlI"/>
+                                    <outlet property="delegate" destination="vch-4U-gYB" id="c9h-40-Qfq"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QXZ-94-5rk">
+                                <rect key="frame" x="278" y="252" width="44" height="30"/>
+                                <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="vch-4U-gYB" eventType="touchDragInside" id="UKZ-ll-lWc"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="n3B-dP-xbj" firstAttribute="centerX" secondItem="NXi-MO-1rH" secondAttribute="centerX" id="CTw-aj-gvQ"/>
+                            <constraint firstItem="QXZ-94-5rk" firstAttribute="top" secondItem="n3B-dP-xbj" secondAttribute="bottom" constant="16" id="QHD-Qc-V1f"/>
+                            <constraint firstItem="QXZ-94-5rk" firstAttribute="centerX" secondItem="NXi-MO-1rH" secondAttribute="centerX" id="asS-Bj-uWi"/>
+                            <constraint firstItem="n3B-dP-xbj" firstAttribute="top" secondItem="4qw-Vt-xP9" secondAttribute="bottom" id="rFc-yv-kXn"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Double" image="doubleicon" id="kSJ-2s-mCh"/>
+                    <connections>
+                        <outlet property="doublePicker" destination="n3B-dP-xbj" id="ekD-Vo-xYk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pYu-3T-1Qg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

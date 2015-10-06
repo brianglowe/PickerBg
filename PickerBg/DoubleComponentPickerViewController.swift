@@ -8,8 +8,18 @@
 
 import UIKit
 
-class DoubleComponentPickerViewController: UIViewController {
+class DoubleComponentPickerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
+    @IBOutlet weak var doublePicker: UIPickerView!
+    
+    private let fillingComponent = 0
+    private let breadComponent = 1
+    private let fillingTypes = [
+        "Ham", "Turkey", "Peanut Butter", "Tuna Salad", "Chicken Salad", "Roast Beef", "Vegemite" ]
+    private let breadTypes = [
+        
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,4 +42,8 @@ class DoubleComponentPickerViewController: UIViewController {
     }
     */
 
+    @IBAction func buttonPressed(sender: AnyObject) {
+    
+    }
+    
 }
