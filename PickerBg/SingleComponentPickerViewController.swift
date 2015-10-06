@@ -8,8 +8,10 @@
 
 import UIKit
 
-class SingleComponentPickerViewController: UIViewController {
+class SingleComponentPickerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
+    @IBOutlet weak var singlePicker: UIPickerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,5 +33,9 @@ class SingleComponentPickerViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
+    @IBAction func buttonPressed(sender: AnyObject) {
+    }
+
 
 }

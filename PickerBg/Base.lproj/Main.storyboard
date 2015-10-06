@@ -15,9 +15,34 @@
                     <view key="view" contentMode="scaleToFill" id="jKY-m1-4I7">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bni-HC-zEQ">
+                                <rect key="frame" x="140" y="20" width="320" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BBN-0I-FeM" id="3Sa-qp-27m"/>
+                                    <outlet property="delegate" destination="BBN-0I-FeM" id="HTN-xX-Sa4"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3R-yi-Y48">
+                                <rect key="frame" x="278" y="244" width="44" height="30"/>
+                                <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BBN-0I-FeM" eventType="touchUpInside" id="AKT-RX-Q3Q"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="X3R-yi-Y48" firstAttribute="centerX" secondItem="jKY-m1-4I7" secondAttribute="centerX" id="XJF-IU-PPK"/>
+                            <constraint firstItem="Bni-HC-zEQ" firstAttribute="centerX" secondItem="jKY-m1-4I7" secondAttribute="centerX" id="dc1-W7-vfc"/>
+                            <constraint firstItem="X3R-yi-Y48" firstAttribute="top" secondItem="Bni-HC-zEQ" secondAttribute="bottom" constant="8" id="egh-LH-vfb"/>
+                            <constraint firstItem="Bni-HC-zEQ" firstAttribute="top" secondItem="IPP-JN-D78" secondAttribute="bottom" id="ehs-qv-JfO"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Single" image="singleicon" id="dVb-ZQ-D6U"/>
+                    <connections>
+                        <outlet property="singlePicker" destination="Bni-HC-zEQ" id="N0c-kI-cnT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dsW-Ct-EOJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
