@@ -14,6 +14,11 @@
 		D3AD51371BC34FAE00B918FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3AD51351BC34FAE00B918FE /* LaunchScreen.storyboard */; };
 		D3AD51421BC34FAE00B918FE /* PickerBgTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AD51411BC34FAE00B918FE /* PickerBgTests.swift */; };
 		D3AD514D1BC34FAE00B918FE /* PickerBgUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AD514C1BC34FAE00B918FE /* PickerBgUITests.swift */; };
+		D3AD515D1BC3513100B918FE /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AD515C1BC3513100B918FE /* DatePickerViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D3AD515F1BC3514E00B918FE /* SingleComponentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AD515E1BC3514E00B918FE /* SingleComponentPickerViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D3AD51611BC3516500B918FE /* DoubleComponentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AD51601BC3516500B918FE /* DoubleComponentPickerViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D3AD51631BC3517800B918FE /* DependentComponentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AD51621BC3517800B918FE /* DependentComponentPickerViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D3AD51651BC3518A00B918FE /* CustomPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AD51641BC3518A00B918FE /* CustomPickerViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		D3AD51481BC34FAE00B918FE /* PickerBgUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PickerBgUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3AD514C1BC34FAE00B918FE /* PickerBgUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerBgUITests.swift; sourceTree = "<group>"; };
 		D3AD514E1BC34FAE00B918FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3AD515C1BC3513100B918FE /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		D3AD515E1BC3514E00B918FE /* SingleComponentPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleComponentPickerViewController.swift; sourceTree = "<group>"; };
+		D3AD51601BC3516500B918FE /* DoubleComponentPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleComponentPickerViewController.swift; sourceTree = "<group>"; };
+		D3AD51621BC3517800B918FE /* DependentComponentPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependentComponentPickerViewController.swift; sourceTree = "<group>"; };
+		D3AD51641BC3518A00B918FE /* CustomPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,11 @@
 			children = (
 				D3AD512C1BC34FAE00B918FE /* AppDelegate.swift */,
 				D3AD512E1BC34FAE00B918FE /* ViewController.swift */,
+				D3AD515C1BC3513100B918FE /* DatePickerViewController.swift */,
+				D3AD515E1BC3514E00B918FE /* SingleComponentPickerViewController.swift */,
+				D3AD51601BC3516500B918FE /* DoubleComponentPickerViewController.swift */,
+				D3AD51621BC3517800B918FE /* DependentComponentPickerViewController.swift */,
+				D3AD51641BC3518A00B918FE /* CustomPickerViewController.swift */,
 				D3AD51301BC34FAE00B918FE /* Main.storyboard */,
 				D3AD51331BC34FAE00B918FE /* Assets.xcassets */,
 				D3AD51351BC34FAE00B918FE /* LaunchScreen.storyboard */,
@@ -257,6 +272,11 @@
 			files = (
 				D3AD512F1BC34FAE00B918FE /* ViewController.swift in Sources */,
 				D3AD512D1BC34FAE00B918FE /* AppDelegate.swift in Sources */,
+				D3AD51631BC3517800B918FE /* DependentComponentPickerViewController.swift in Sources */,
+				D3AD51611BC3516500B918FE /* DoubleComponentPickerViewController.swift in Sources */,
+				D3AD51651BC3518A00B918FE /* CustomPickerViewController.swift in Sources */,
+				D3AD515F1BC3514E00B918FE /* SingleComponentPickerViewController.swift in Sources */,
+				D3AD515D1BC3513100B918FE /* DatePickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
