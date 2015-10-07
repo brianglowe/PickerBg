@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D32AE7AA1BC4BB6900545E50 /* crunch.wav in Resources */ = {isa = PBXBuildFile; fileRef = D32AE7A81BC4BB6900545E50 /* crunch.wav */; settings = {ASSET_TAGS = (); }; };
+		D32AE7AB1BC4BB6900545E50 /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = D32AE7A91BC4BB6900545E50 /* win.wav */; settings = {ASSET_TAGS = (); }; };
 		D33347DD1BC447A200A3152C /* statedictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = D33347DC1BC447A200A3152C /* statedictionary.plist */; settings = {ASSET_TAGS = (); }; };
 		D3AD512D1BC34FAE00B918FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AD512C1BC34FAE00B918FE /* AppDelegate.swift */; };
 		D3AD512F1BC34FAE00B918FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AD512E1BC34FAE00B918FE /* ViewController.swift */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D32AE7A81BC4BB6900545E50 /* crunch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = crunch.wav; path = "../../../../Downloads/9781484204108/Examples/07 - Picker Sounds/crunch.wav"; sourceTree = "<group>"; };
+		D32AE7A91BC4BB6900545E50 /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = win.wav; path = "../../../../Downloads/9781484204108/Examples/07 - Picker Sounds/win.wav"; sourceTree = "<group>"; };
 		D33347DC1BC447A200A3152C /* statedictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = statedictionary.plist; path = "../../../../Downloads/9781484204108/Examples/07 - Picker Data/statedictionary.plist"; sourceTree = "<group>"; };
 		D3AD51291BC34FAE00B918FE /* PickerBg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickerBg.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3AD512C1BC34FAE00B918FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 		D3AD512B1BC34FAE00B918FE /* PickerBg */ = {
 			isa = PBXGroup;
 			children = (
+				D32AE7A81BC4BB6900545E50 /* crunch.wav */,
+				D32AE7A91BC4BB6900545E50 /* win.wav */,
 				D3AD512C1BC34FAE00B918FE /* AppDelegate.swift */,
 				D3AD512E1BC34FAE00B918FE /* ViewController.swift */,
 				D3AD515C1BC3513100B918FE /* DatePickerViewController.swift */,
@@ -246,8 +252,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D32AE7AA1BC4BB6900545E50 /* crunch.wav in Resources */,
 				D3AD51371BC34FAE00B918FE /* LaunchScreen.storyboard in Resources */,
 				D3AD51341BC34FAE00B918FE /* Assets.xcassets in Resources */,
+				D32AE7AB1BC4BB6900545E50 /* win.wav in Resources */,
 				D33347DD1BC447A200A3152C /* statedictionary.plist in Resources */,
 				D3AD51321BC34FAE00B918FE /* Main.storyboard in Resources */,
 			);
