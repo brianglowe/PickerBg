@@ -78,13 +78,39 @@
                     <view key="view" contentMode="scaleToFill" id="5n9-I5-OJm">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3TP-z6-bCP">
+                                <rect key="frame" x="272" y="241" width="56" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="vFz-YI-H67" eventType="touchUpInside" id="Pv5-dP-Ucy"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jeH-Eb-GVH">
+                                <rect key="frame" x="140" y="20" width="320" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="vFz-YI-H67" id="wUy-lZ-qSz"/>
+                                    <outlet property="delegate" destination="vFz-YI-H67" id="8it-Aa-nrV"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jeH-Eb-GVH" firstAttribute="centerX" secondItem="5n9-I5-OJm" secondAttribute="centerX" id="Ozk-hJ-fMa"/>
+                            <constraint firstItem="jeH-Eb-GVH" firstAttribute="top" secondItem="Kpm-Fg-S9b" secondAttribute="bottom" id="aTw-bf-nbS"/>
+                            <constraint firstItem="3TP-z6-bCP" firstAttribute="centerX" secondItem="5n9-I5-OJm" secondAttribute="centerX" id="eaB-5u-mhR"/>
+                            <constraint firstItem="3TP-z6-bCP" firstAttribute="top" secondItem="jeH-Eb-GVH" secondAttribute="bottom" constant="5" id="gO1-pC-Nyy"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dependent" image="dependenticon" id="FW6-eF-wOP"/>
+                    <connections>
+                        <outlet property="dependentPicker" destination="jeH-Eb-GVH" id="5c4-hK-Ect"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kyv-xl-XPd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="187" y="610"/>
+            <point key="canvasLocation" x="183" y="638"/>
         </scene>
         <!--Double-->
         <scene sceneID="KXL-7W-pnM">
@@ -109,7 +135,7 @@
                                 <rect key="frame" x="278" y="252" width="44" height="30"/>
                                 <state key="normal" title="Select"/>
                                 <connections>
-                                    <action selector="buttonPressed:" destination="vch-4U-gYB" eventType="touchDragInside" id="UKZ-ll-lWc"/>
+                                    <action selector="buttonPressed:" destination="vch-4U-gYB" eventType="touchUpInside" id="53Q-lE-TTM"/>
                                 </connections>
                             </button>
                         </subviews>

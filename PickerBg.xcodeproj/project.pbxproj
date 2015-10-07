@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D33347DD1BC447A200A3152C /* statedictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = D33347DC1BC447A200A3152C /* statedictionary.plist */; settings = {ASSET_TAGS = (); }; };
 		D3AD512D1BC34FAE00B918FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AD512C1BC34FAE00B918FE /* AppDelegate.swift */; };
 		D3AD512F1BC34FAE00B918FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AD512E1BC34FAE00B918FE /* ViewController.swift */; };
 		D3AD51321BC34FAE00B918FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3AD51301BC34FAE00B918FE /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D33347DC1BC447A200A3152C /* statedictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = statedictionary.plist; path = "../../../../Downloads/9781484204108/Examples/07 - Picker Data/statedictionary.plist"; sourceTree = "<group>"; };
 		D3AD51291BC34FAE00B918FE /* PickerBg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickerBg.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3AD512C1BC34FAE00B918FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3AD512E1BC34FAE00B918FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				D3AD51301BC34FAE00B918FE /* Main.storyboard */,
 				D3AD51331BC34FAE00B918FE /* Assets.xcassets */,
 				D3AD51351BC34FAE00B918FE /* LaunchScreen.storyboard */,
+				D33347DC1BC447A200A3152C /* statedictionary.plist */,
 				D3AD51381BC34FAE00B918FE /* Info.plist */,
 			);
 			path = PickerBg;
@@ -245,6 +248,7 @@
 			files = (
 				D3AD51371BC34FAE00B918FE /* LaunchScreen.storyboard in Resources */,
 				D3AD51341BC34FAE00B918FE /* Assets.xcassets in Resources */,
+				D33347DD1BC447A200A3152C /* statedictionary.plist in Resources */,
 				D3AD51321BC34FAE00B918FE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,6 +507,7 @@
 				D3AD51531BC34FAE00B918FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3AD51541BC34FAE00B918FE /* Build configuration list for PBXNativeTarget "PickerBgTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +516,7 @@
 				D3AD51561BC34FAE00B918FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3AD51571BC34FAE00B918FE /* Build configuration list for PBXNativeTarget "PickerBgUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +525,7 @@
 				D3AD51591BC34FAE00B918FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
